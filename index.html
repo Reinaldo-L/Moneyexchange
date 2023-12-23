@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="https://kit.fontawesome.com/fde4ffb5b1.js" crossorigin="anonymous"></script>
+    <title>Money Exchange</title>
+</head>
+<body>
+    <div class="maincontainer" id="maincontainer">
+        <div class="title">
+            <h1><i class="fa-solid fa-money-bill-transfer"></i> Chilean Currency Converter <i class="fa-solid fa-money-bill-transfer"></i></h1>
+        </div>
+        <br>
+        <div class="details">
+            <div class="detailsdetails">
+                <h3 class="h3">Chilean Pesos (CLP)</h3>
+                <input type="number" id="inputValue" class="inputValue" placeholder="Input the desired amount in CLP">
+                <br>
+                <label class="label" for="title">Currency to convert</label>
+                <br>
+                <select name="currency" id="currency" class="currency">
+                    <option class="select" value="" selected>Choose a Currency</option>
+                </select> 
+            </div>
+            
+            <button id="convert" class="convert">Search <i class="fa-solid fa-magnifying-glass-dollar"></i></button>
+            <br>
+            <p id="result"></p>
+            <div id="myChart" class="myChart">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
